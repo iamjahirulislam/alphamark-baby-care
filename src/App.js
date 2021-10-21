@@ -12,6 +12,8 @@ import Footer from './components/Shared/Footer/Footer';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Doctors from './components/Doctors/Doctors';
+import Blogs from './components/HealthTips/healthtips';
+import HealthTips from './components/HealthTips/healthtips';
 
 function App() {
   return (
@@ -34,6 +36,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/doctors">
               <Doctors></Doctors>
+            </PrivateRoute>
+            <PrivateRoute path='/healthTips'>
+              <HealthTips></HealthTips>
             </PrivateRoute>
             <PrivateRoute path="/about">
               <About></About>

@@ -9,8 +9,9 @@ const About = () => {
     }, [])
     return (
         <div className="container">
-            <h6 className="pt-3 fs-5 fw-bold text-success">Our Promises</h6>
-            <h2 className="section-title">Why You Should Choose Us!</h2>
+            <h2 className="pt-5 fs-9 fw-bold text-success">OVERVIEW</h2>
+            <p>Alphamark Baby Care is one of the first agencies in Qatar to provide services not only for homes, but also for schools, companies, construction sites, factories, institutions and other establishments.The company seeks excellence to provide health services whether long-term or short-term through specialized teams who are carefully selected and licensed here in Qatar from the Ministry of Health equipped with all the necessary tools to carry out their duty for the customer’s satisfaction.The company aspires to build a good reputation in the healthcare industry due to the outstanding services they have given to the clients and the efficiency of its crew. It also seeks continuation in the development of future plans and to maintain the quality of services and be one of the leading healthcare companies in the country.</p>
+            <h5 className="pt-5 fs-7 fw-bold text-success">WE ARE HERE FOR YOU</h5>
             <div className="row">
                 {
                     about.map(ab => (

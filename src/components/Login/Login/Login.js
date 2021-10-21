@@ -14,7 +14,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
 
 
-    const { error, handleGoogleLogin, createUserAccount, loginUsingEmailPassword, handleError, resetPassword } = useAuth();
+    const { error, handleGoogleLogin, createUserAccount, loginUsingEmailPassword, handleError } = useAuth();
 
     // console.log(user);
 
@@ -52,9 +52,6 @@ const Login = () => {
         loginUsingEmailPassword(email, password);
     }
 
-    const handleResetPassword = () => {
-        resetPassword(email)
-    }
 
 
     return (
@@ -80,9 +77,6 @@ const Login = () => {
                                         {
                                             error && <p className="text-danger">{error}</p>
                                         }
-                                        <div className="d-flex ms-2">
-                                            <p><small className="text-danger" onClick={() => handleResetPassword()} style={{ cursor: 'pointer' }}>Reset Password?</small></p>
-                                        </div>
                                         <button onClick={() => handleLogin()} className="login-btn mb-3 btn btn-light login-register-btn">login</button>
                                         <p ><small>Don't have account? <span style={{ cursor: 'pointer' }} className="text-primary" onClick={() => { setIsTrue(false) }}>Click Here</span></small> </p>
 
@@ -115,7 +109,7 @@ const Login = () => {
 
                             <p>Login with</p>
                             <div>
-                                <button className=" btn btn-primary" onClick={handleGoogleLogin} style={{ color: 'white' }}>login with google</button>
+                                <button className=" btn btn-primary" onClick={handleGoogleLogin} style={{ color: 'white' }}>Google</button>
                             </div>
                         </div>
                     </div>

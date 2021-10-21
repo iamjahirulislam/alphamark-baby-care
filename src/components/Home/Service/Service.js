@@ -14,7 +14,7 @@ const Service = ({ service }) => {
                     <h4 className="text-success fw-bold p-2">{name}</h4>
                     <p>{description}</p>
                     <Link to={`/serviceDetails/${_id}`}>
-                        <button className="btn btn-warning">See Details</button>
+                        <button className="btn btn-primary">See Details</button>
                     </Link>
                 </div>
             </div>

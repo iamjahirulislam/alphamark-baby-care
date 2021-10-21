@@ -16,18 +16,19 @@ const Header = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse >
                         <Nav className="ms-auto text-white">
-                            <Navbar.Text>
-                                <a href="#login"> {user?.displayName}</a>
-                            </Navbar.Text>
                             <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
                             <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
                             <Nav.Link as={Link} to="/doctors">Doctors</Nav.Link>
+                            <Nav.Link as={Link} to="/healthTips">HealthTips</Nav.Link>
                             <Nav.Link as={HashLink} to="/about">About Us</Nav.Link>
                             {user?.email ?
                                 <Button onClick={handleLogout} variant="light" className="mx-3">Logout</Button>
                                 :
                                 <Nav.Link as={Link} to="/login">Login</Nav.Link>}
                         </Nav>
+                        <Navbar.Text>
+                            <a href="#login"> {user?.displayName && (<Navbar.Text className="text-light">Hello, {user?.displayName}</Navbar.Text>)}</a>
+                        </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

@@ -7,8 +7,7 @@
 }
  
 .login-container{
-    /* background: url('https://i.ibb.co/mRBBzC3/login-bg.jpg'); */
-    background: url('https://i.ibb.co/X5Z4yvg/login-bg-1-1.jpg');
+    background-color:whitesmoke;
     width: 100%;
     background-position: center;
     background-size: cover;

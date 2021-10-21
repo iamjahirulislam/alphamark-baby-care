@@ -38,10 +38,6 @@ const useFirebase = () => {
     }
 
 
-    const resetPassword = (email) => {
-        sendPasswordResetEmail(auth, email)
-            .then(() => { })
-    }
 
     const loginUsingEmailPassword = (email, password) => {
         setIsLoading(true);
@@ -107,7 +103,6 @@ const useFirebase = () => {
         handleGoogleLogin,
         handleLogout,
         handleError,
-        resetPassword,
     }
 
 }

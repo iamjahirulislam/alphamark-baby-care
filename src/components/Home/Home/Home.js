@@ -27,7 +27,7 @@ const Home = () => {
                         />
                         <Carousel.Caption>
                             <h3 className="carousel-title">Vision and eye health in children</h3>
-                            <Button variant="success fw-bold my-1 p-2 text-white">Read More</Button>
+                            <Button variant="success fw-bold my-1 p-2 text-white">View More</Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -38,8 +38,8 @@ const Home = () => {
                         />
 
                         <Carousel.Caption>
-                            <h3 className="carousel-title">Haematopoietic stem cell transplant in children</h3>
-                            <Button variant="success fw-bold my-1 p-2 text-white">Read More</Button>
+                            <h3 className="carousel-title">Parenting of children</h3>
+                            <Button variant="success fw-bold my-1 p-2 text-white">View More</Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -50,8 +50,8 @@ const Home = () => {
                         />
 
                         <Carousel.Caption>
-                            <h3 className="carousel-title">Children and their families require more help with medicines</h3>
-                            <Button variant="success fw-bold my-1 p-2 text-white">Read More</Button>
+                            <h3 className="carousel-title">Children care</h3>
+                            <Button variant="success fw-bold my-1 p-2 text-white">View More</Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
