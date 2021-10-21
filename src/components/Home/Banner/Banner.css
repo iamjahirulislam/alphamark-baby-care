@@ -1,0 +1,29 @@
+.test-section{
+    height: 500px;
+    width: 100%;
+    margin-bottom: 10px;
+    background: url(https://i.ibb.co/ZmCzYYx/baby-Hands.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-color: rgb(184, 42, 42); */
+}
+.banner-title{
+       padding: 50px 20px 20px;
+       font-size: 60px;
+       font-weight: 700;
+       font-family: sans-serif;
+       color: #4bdfb7;
+}
+.banner-details{
+    font-size: 20px;
+    font-weight: 500;
+    color: mistyrose;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+.banner-title{
+    padding: 10px;
+    font-size: 40px;
+}
+}
